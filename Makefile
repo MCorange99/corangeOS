@@ -1,11 +1,10 @@
-
-# sudo apt-get install g++ binutils libc6-dev-i386
-
-GCCPARAMS = -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore
+GCCPARAMS = -m32 -fno-stack-protector -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore
 ASPARAMS = --32
 LDPARAMS = -melf_i386
 
-objects = loader.o gdt.o kernel.o
+objects = loader.o gdt.o kernel.o port.o
+
+.PHONY: clean
 
 %.o: %.cpp
 	gcc $(GCCPARAMS) -c -o $@ $<
@@ -17,9 +16,11 @@ mykernel.bin: linker.ld $(objects)
 	ld $(LDPARAMS) -T $< -o $@ $(objects)
 
 mykernel.iso: mykernel.bin
-	mkdir -p iso/boot/grub
+	mkdir iso
+	mkdir iso/boot
+	mkdir iso/boot/grub
 	cp mykernel.bin iso/boot/mykernel.bin
-	echo 'set timeout=0'                     >> iso/boot/grub/grub.cfg
+	echo 'set timeout=0'                      > iso/boot/grub/grub.cfg
 	echo 'set default=0'                     >> iso/boot/grub/grub.cfg
 	echo ''                                  >> iso/boot/grub/grub.cfg
 	echo 'menuentry "My Operating System" {' >> iso/boot/grub/grub.cfg
@@ -29,8 +30,9 @@ mykernel.iso: mykernel.bin
 	grub-mkrescue --output=mykernel.iso iso
 	rm -rf iso
 
+
 run: mykernel.iso
 	qemu-system-x86_64 mykernel.iso
 
 clean:
-	rm -f $(objects) mykernel.bin
+	rm -f $(objects) mykernel.bin mykernel.iso

@@ -2,51 +2,29 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target 'all'.  Stop.
  
 # GNU Make 4.3
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
- 
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
- 
-# Make data base, printed on Sun Jan 23 19:28:40 2022
- 
+# Make data base, printed on Sun Jan 23 20:16:08 2022
 
 # Variables
 
- 
 # environment
- 
 GDK_BACKEND = x11
- 
 # environment
- 
 LC_ALL = C
- 
 # environment
- 
 NO_AT_BRIDGE = 1
- 
 # environment
- 
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-dd9168c2-51a6-4678-adeb-d491a0c6e3c1.sock
- 
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e6e9b4e0-6820-469c-815c-7e2a884f0105.sock
 # environment
- 
 VSCODE_CWD = /home/mcorange/coding/tsoding/os
- 
 # environment
- 
 WINDOWID = 23068675
- 
 # default
- 
 MAKE_COMMAND := make
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
@@ -60,7 +38,7 @@ PWD = /home/mcorange/coding/tsoding/os
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 MAIL = /var/spool/mail/mcorange
-# makefile (from 'Makefile', line 5)
+# makefile (from 'Makefile', line 2)
 ASPARAMS = --32
 # environment
 XDG_DATA_DIRS = /usr/local/share:/usr/share
@@ -74,7 +52,7 @@ VSCODE_LOG_STACK = false
 VSCODE_CODE_CACHE_PATH = /home/mcorange/.config/Code/CachedData/6cba118ac49a1b88332f312a8f67186f7f3c1643
 # environment
 XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
-# makefile (from 'Makefile', line 6)
+# makefile (from 'Makefile', line 3)
 LDPARAMS = -melf_i386
 # environment
 LANG = C
@@ -99,7 +77,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXATlDU5/agent.470
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXpp8T49/agent.550
 # default
 .SHELLFLAGS := -c
 # environment
@@ -117,13 +95,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 1411
+VSCODE_PID = 977
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/mcarch:@/tmp/.ICE-unix/418,unix/mcarch:/tmp/.ICE-unix/418
+SESSION_MANAGER = local/mcarch:@/tmp/.ICE-unix/500,unix/mcarch:/tmp/.ICE-unix/500
 # automatic
 *F = $(notdir $*)
 # environment
@@ -142,10 +120,10 @@ MAKE_HOST := x86_64-pc-linux-gnu
 SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
-# makefile (from 'Makefile', line 8)
-objects = loader.o gdt.o kernel.o
-# makefile (from 'Makefile', line 4)
-GCCPARAMS = -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore
+# makefile (from 'Makefile', line 5)
+objects = loader.o gdt.o kernel.o port.o
+# makefile (from 'Makefile', line 1)
+GCCPARAMS = -m32 -fno-stack-protector -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore
 # environment
 SHLVL = 3
 # environment
@@ -168,6 +146,8 @@ VSCODE_LOG_NATIVE = false
 XDG_SEAT = seat0
 # environment
 XDG_CURRENT_DESKTOP = XFCE
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # automatic
 +F = $(notdir $+)
 # environment
@@ -185,6 +165,7 @@ XDG_VTNR = 1
 # makefile
 .DEFAULT_GOAL := mykernel.bin
 # environment
+ 
 DISPLAY = :0.0
 # environment
 GTK_MODULES = canberra-gtk-module:canberra-gtk-module
@@ -193,7 +174,7 @@ USER = mcorange
 # default
 MAKE_VERSION := 4.3
 # environment
-SSH_AGENT_PID = 471
+SSH_AGENT_PID = 551
 # environment
 _ = /usr/bin/make
 # environment
@@ -231,7 +212,7 @@ VTE_VERSION = 6602
 # environment
 XDG_MENU_PREFIX = xfce-
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=6/129=5%
+# Load=99/1024=10%, Rehash=0, Collisions=6/130=5%
 
 # Pattern-specific Variable Values
 
@@ -239,18 +220,18 @@ XDG_MENU_PREFIX = xfce-
 
 # Directories
 
-# . (device 2057, inode 4203735): 16 files, no impossibilities.
+# . (device 2057, inode 4203735): 22 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 22 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 %.o: %.cpp
-#  recipe to execute (from 'Makefile', line 11):
+#  recipe to execute (from 'Makefile', line 10):
 	gcc $(GCCPARAMS) -c -o $@ $<
 
 %.o: %.s
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 13):
 	as $(ASPARAMS) -o $@ $<
 
 # 2 implicit rules, 0 (0.0%) terminal.
@@ -265,16 +246,23 @@ kernel.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-01-23 19:28:28.472742538
+#  Last modified 2022-01-23 20:10:37.803613786
 #  File has been updated.
 #  Successfully updated.
 
-clean:
+# Not a target:
+port.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
-	rm -f $(objects) mykernel.bin
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 38):
+	rm -f $(objects) mykernel.bin mykernel.iso
 
 # Not a target:
 gdt.o:
@@ -305,7 +293,7 @@ run: mykernel.iso
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 33):
+#  recipe to execute (from 'Makefile', line 35):
 	qemu-system-x86_64 mykernel.iso
 
 # Not a target:
@@ -314,23 +302,28 @@ linker.ld:
 #  Modification time never checked.
 #  File has not been updated.
 
-mykernel.bin: linker.ld loader.o gdt.o kernel.o
+mykernel.bin: linker.ld loader.o gdt.o kernel.o port.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 17):
+#  recipe to execute (from 'Makefile', line 16):
 	ld $(LDPARAMS) -T $< -o $@ $(objects)
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 mykernel.iso: mykernel.bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
-#  recipe to execute (from 'Makefile', line 20):
- 
-	mkdir -p iso/boot/grub
+#  recipe to execute (from 'Makefile', line 19):
+	mkdir iso
+	mkdir iso/boot
+	mkdir iso/boot/grub
 	cp mykernel.bin iso/boot/mykernel.bin
-	echo 'set timeout=0'                     >> iso/boot/grub/grub.cfg
+	echo 'set timeout=0'                      > iso/boot/grub/grub.cfg
 	echo 'set default=0'                     >> iso/boot/grub/grub.cfg
 	echo ''                                  >> iso/boot/grub/grub.cfg
 	echo 'menuentry "My Operating System" {' >> iso/boot/grub/grub.cfg
@@ -339,21 +332,22 @@ mykernel.iso: mykernel.bin
 	echo '}'                                 >> iso/boot/grub/grub.cfg
 	grub-mkrescue --output=mykernel.iso iso
 	rm -rf iso
+ 
 
 # files hash-table stats:
-# Load=12/1024=1%, Rehash=0, Collisions=0/28=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/33=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 212 B / avg = 7 B
-# current buf: size = 8162 B / used = 212 B / count = 27 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 33 / storage = 272 B / avg = 8 B
+# current buf: size = 8162 B / used = 272 B / count = 33 / avg = 8 B
 
-# strcache performance: lookups = 43 / hit rate = 37%
+# strcache performance: lookups = 53 / hit rate = 37%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/43=0%
-# Finished Make data base on Sun Jan 23 19:28:40 2022
+# Load=33/8192=0%, Rehash=0, Collisions=0/53=0%
+# Finished Make data base on Sun Jan 23 20:16:08 2022
 
  
