@@ -1,0 +1,7 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/mcorange/coding/tsoding/os'
+gcc -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore -c -o gdt.o gdt.cpp
+gcc -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore -c -o kernel.o kernel.cpp
+ld -melf_i386 -T linker.ld -o mykernel.bin loader.o gdt.o kernel.o
+make: Leaving directory '/home/mcorange/coding/tsoding/os'
+ 

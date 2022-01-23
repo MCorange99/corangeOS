@@ -1,0 +1,359 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+ 
+# GNU Make 4.3
+ 
+# Built for x86_64-pc-linux-gnu
+ 
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+ 
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
+# This is free software: you are free to change and redistribute it.
+ 
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+ 
+# Make data base, printed on Sun Jan 23 19:28:40 2022
+ 
+
+# Variables
+
+ 
+# environment
+ 
+GDK_BACKEND = x11
+ 
+# environment
+ 
+LC_ALL = C
+ 
+# environment
+ 
+NO_AT_BRIDGE = 1
+ 
+# environment
+ 
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-dd9168c2-51a6-4678-adeb-d491a0c6e3c1.sock
+ 
+# environment
+ 
+VSCODE_CWD = /home/mcorange/coding/tsoding/os
+ 
+# environment
+ 
+WINDOWID = 23068675
+ 
+# default
+ 
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/mcorange/coding/tsoding/os
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/spool/mail/mcorange
+# makefile (from 'Makefile', line 5)
+ASPARAMS = --32
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/mcorange/.config/Code/CachedData/6cba118ac49a1b88332f312a8f67186f7f3c1643
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+# makefile (from 'Makefile', line 6)
+LDPARAMS = -melf_i386
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/mcorange/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/mcorange/coding/tsoding/os
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXATlDU5/agent.470
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = XFCE
+# environment
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=09e1aab6-14d1-4988-b08f-63391b5d66e2&iid=09e1aab6-14d1-4988-b08f-63391b5d66e2&sid=09e1aab6-14d1-4988-b08f-63391b5d66e2","uploadToServer":true}
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 1411
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/mcarch:@/tmp/.ICE-unix/418,unix/mcarch:/tmp/.ICE-unix/418
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+BREAKPAD_DUMP_LOCATION = /home/mcorange/.config/Code/exthost Crash Reports
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 8)
+objects = loader.o gdt.o kernel.o
+# makefile (from 'Makefile', line 4)
+GCCPARAMS = -m32 -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore
+# environment
+SHLVL = 3
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_SEAT = seat0
+# environment
+XDG_CURRENT_DESKTOP = XFCE
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+DESKTOP_SESSION = xfce
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = XFCE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = mcorange
+# environment
+XDG_VTNR = 1
+# makefile
+.DEFAULT_GOAL := mykernel.bin
+# environment
+DISPLAY = :0.0
+# environment
+GTK_MODULES = canberra-gtk-module:canberra-gtk-module
+# environment
+USER = mcorange
+# default
+MAKE_VERSION := 4.3
+# environment
+SSH_AGENT_PID = 471
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+HOME = /home/mcorange
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-6d9bbd01-1.61.2-main.sock
+# environment
+TERM = xterm-256color
+# environment
+XDG_SESSION_ID = 2
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6602
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+XDG_MENU_PREFIX = xfce-
+# variable set hash-table stats:
+# Load=98/1024=10%, Rehash=0, Collisions=6/129=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2057, inode 4203735): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.cpp
+#  recipe to execute (from 'Makefile', line 11):
+	gcc $(GCCPARAMS) -c -o $@ $<
+
+%.o: %.s
+#  recipe to execute (from 'Makefile', line 14):
+	as $(ASPARAMS) -o $@ $<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+kernel.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-01-23 19:28:28.472742538
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	rm -f $(objects) mykernel.bin
+
+# Not a target:
+gdt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+loader.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+run: mykernel.iso
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	qemu-system-x86_64 mykernel.iso
+
+# Not a target:
+linker.ld:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+mykernel.bin: linker.ld loader.o gdt.o kernel.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
+	ld $(LDPARAMS) -T $< -o $@ $(objects)
+
+mykernel.iso: mykernel.bin
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 20):
+ 
+	mkdir -p iso/boot/grub
+	cp mykernel.bin iso/boot/mykernel.bin
+	echo 'set timeout=0'                     >> iso/boot/grub/grub.cfg
+	echo 'set default=0'                     >> iso/boot/grub/grub.cfg
+	echo ''                                  >> iso/boot/grub/grub.cfg
+	echo 'menuentry "My Operating System" {' >> iso/boot/grub/grub.cfg
+	echo '  multiboot /boot/mykernel.bin'    >> iso/boot/grub/grub.cfg
+	echo '  boot'                            >> iso/boot/grub/grub.cfg
+	echo '}'                                 >> iso/boot/grub/grub.cfg
+	grub-mkrescue --output=mykernel.iso iso
+	rm -rf iso
+
+# files hash-table stats:
+# Load=12/1024=1%, Rehash=0, Collisions=0/28=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 27 / storage = 212 B / avg = 7 B
+# current buf: size = 8162 B / used = 212 B / count = 27 / avg = 7 B
+
+# strcache performance: lookups = 43 / hit rate = 37%
+# hash-table stats:
+# Load=27/8192=0%, Rehash=0, Collisions=0/43=0%
+# Finished Make data base on Sun Jan 23 19:28:40 2022
+
+ 
