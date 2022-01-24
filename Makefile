@@ -34,5 +34,9 @@ mykernel.iso: mykernel.bin
 run: mykernel.iso
 	qemu-system-x86_64 mykernel.iso
 
+run-vb: mykernel.iso
+	(killall VirtualBox && sleep 1) || true
+	VirtualBox --startvm 'My Operating System' &
+
 clean:
 	rm -f $(objects) mykernel.bin mykernel.iso
