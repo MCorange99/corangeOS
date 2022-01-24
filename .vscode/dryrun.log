@@ -1,5 +1,16 @@
-make --dry-run --keep-going --print-directory
+make mykernel.bin --dry-run --keep-going --print-directory
 make: Entering directory '/home/mcorange/coding/tsoding/os'
-make: 'mykernel.bin' is up to date.
+ 
+as --32 -o loader.o loader.s
+ 
+gcc -m32 -fno-stack-protector -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore -c -o gdt.o gdt.cpp
+ 
+gcc -m32 -fno-stack-protector -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore -c -o kernel.o kernel.cpp
+ 
+gcc -m32 -fno-stack-protector -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore -c -o port.o port.cpp
+ 
+gcc -m32 -fno-stack-protector -fno-use-cxa-atexit -nostdlib -fno-builtin -fno-rtti -fno-exceptions -fno-leading-underscore -c -o interrupts.o interrupts.cpp
+as --32 -o interruptstubs.o interruptstubs.s
+ld -melf_i386 -T linker.ld -o mykernel.bin loader.o gdt.o kernel.o port.o interrupts.o interruptstubs.o
 make: Leaving directory '/home/mcorange/coding/tsoding/os'
  

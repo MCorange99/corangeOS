@@ -2,7 +2,7 @@ GCCPARAMS = -m32 -fno-stack-protector -fno-use-cxa-atexit -nostdlib -fno-builtin
 ASPARAMS = --32
 LDPARAMS = -melf_i386
 
-objects = loader.o gdt.o kernel.o port.o
+objects = loader.o gdt.o kernel.o port.o interrupts.o interruptstubs.o
 
 .PHONY: clean
 

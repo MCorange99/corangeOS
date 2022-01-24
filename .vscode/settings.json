@@ -1,3 +1,10 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/mcorange/coding/tsoding/os",
+            "binaryPath": "/home/mcorange/coding/tsoding/os/mykernel.bin",
+            "binaryArgs": []
+        }
+    ]
 }
